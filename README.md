@@ -19,7 +19,7 @@ swipe.init()
 | --- | --- | --- | --- | --- |
 | target | false | document | dom elements | The dom target |
 | resistance | false | `10` | Recommended from `0` to `15` | Min touch distance to trigger the callback on swipe |
-| callback | false | `console.log( swipe )` | function | The callback for the swipe gesture |
+| callback | false | `console.log(swipe)` | function | The callback for the swipe gesture |
 
 ## Vue Component Example 
 
@@ -51,14 +51,29 @@ swipe.init()
                 })
             },
             onSwipe( swipe ) {
-                this.swipeObj = swipe;
-                console.log( this.swipeObj );
+                this.swipeObj = swipe
+                console.log( this.swipeObj )
             }
         },
         beforeDestroy() {
-            this.swipe.destroy();
+            this.swipe.destroy()
         }
     }
 
 </script>
+
+<style lang="scss" scoped>
+    
+    .box-swipe {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border: 1px solid lime;
+        p {
+            font-size: 14px;
+            color: lime;
+        }
+    }
+
+</style>
 ```
