@@ -18,7 +18,7 @@ swipe.init()
 | Opt ID | Required | Default | Values | Description |
 | --- | --- | --- | --- | --- |
 | target | false | document | dom elements | The dom target |
-| resistance | false | `10` | Recommended from `0` to `15` | Min touch distance to trigger the callback on swipe |
+| resistance | false | `0` | Recommended from `0` to `10` | Min touch distance to trigger the callback on swipe |
 | callback | false | `console.log(swipe)` | function | The callback for the swipe gesture |
 
 ## Vue Component Example 
