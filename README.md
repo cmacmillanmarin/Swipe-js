@@ -24,15 +24,19 @@ swipe.init()
 ## Vue Component Example 
 
 ```
+<!--
+    SwipeBox.vue
+-->
+
 <template>
-    <div class="box-swipe">
+    <div class="swipe-box">
         <p v-text="swipeObj" />
     </div>
 </template>
 
 <script>
     
-    import Swipe from "~/Swipe.js"
+    import Swipe from "./Swipe.js"
 
     export default {
         name: "SwipeBox",
@@ -48,12 +52,11 @@ swipe.init()
             init() {
                 this.swipe = new Swipe({
                     target: this.$el,
-                    resistance: 0,
                     callback: this.onSwipe
                 })
                 this.swipe.init()
             },
-            onSwipe( swipe ) {
+            onSwipe( swipe ) {
                 this.swipeObj = swipe
                 console.log( this.swipeObj )
             }
@@ -67,7 +70,7 @@ swipe.init()
 
 <style lang="scss" scoped>
     
-    .box-swipe {
+    .swipe-box {
         position: relative;
         width: 250px;
         height: 250px;

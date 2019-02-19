@@ -1,5 +1,9 @@
+<!--
+    SwipeBox.vue
+-->
+
 <template>
-    <div class="box-swipe">
+    <div class="swipe-box">
         <p v-text="swipeObj" />
     </div>
 </template>
@@ -40,7 +44,7 @@
 
 <style lang="scss" scoped>
     
-    .box-swipe {
+    .swipe-box {
         position: relative;
         width: 250px;
         height: 250px;

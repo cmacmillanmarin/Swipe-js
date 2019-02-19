@@ -1,5 +1,5 @@
 //
-// utils/controllers/Swipe.js
+// Swipe.js
 
 export default class Swipe {
     constructor( opts ) {
