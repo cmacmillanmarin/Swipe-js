@@ -1,6 +1,6 @@
 # Swipe js
 
-Native and simple class for swipe interactions.
+Simple class for swipe interactions.
 
 ## Basic js Set up
 
