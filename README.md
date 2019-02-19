@@ -51,7 +51,7 @@ swipe.init()
                     resistance: 0,
                     callback: this.onSwipe
                 })
-                this.swipe.init();
+                this.swipe.init()
             },
             onSwipe( swipe ) {
                 this.swipeObj = swipe
