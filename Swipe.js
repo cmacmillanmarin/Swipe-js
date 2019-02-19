@@ -7,7 +7,7 @@ export default class Swipe {
         this.xDown = null;
         this.yDown = null;
         this.target = opts.target || document;
-        this.resistance = opts.resistance || 10;
+        this.resistance = opts.resistance || 0;
         this.callback = opts.callback || function ( swipe ) { console.log( swipe ); };
         this.onTouchStartHandler = this.handleTouchStart.bind( this );
         this.onTouchMovementHandler = this.handleTouchMove.bind( this );
