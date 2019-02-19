@@ -41,7 +41,9 @@ swipe.init()
                 swipeObj: {}
             }
         },
-        mounted() { this.init() },
+        mounted() { 
+            this.init() 
+        },
         methods: {
             init() {
                 this.swipe = new Swipe({
@@ -49,6 +51,7 @@ swipe.init()
                     resistance: 0,
                     callback: this.onSwipe
                 })
+                this.swipe.init();
             },
             onSwipe( swipe ) {
                 this.swipeObj = swipe
